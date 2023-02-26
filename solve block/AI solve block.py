@@ -569,7 +569,7 @@ fileName = "trace-"+datetime.datetime.now().strftime('%m_%d_%Y-%I_%M_%S_%p')+".t
 p.setFileName(fileName)
 
 with open(fileName, "w") as file:
-    text = "Command-Line Arguments : "
+    text = "Command-Line Arguments : ["
     # text += str(sys.argv)+"\n"
     text += "'"+sys.argv[1]+"', '"+sys.argv[2]+"'"
     if (len(sys.argv) >= 4):
